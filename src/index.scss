@@ -187,3 +187,25 @@ font-size: 1rem; /* Set font size smaller */
 height: 100%;
 }
 
+.containertextarea textarea {
+  height: 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  max-height: 180px;
+  font-size: 0.95rem;
+  resize: none;
+  padding: 16px 15px 16px 0;
+}
+.containertextarea i {
+  align-self: flex-end;
+  height: 55px;
+  line-height: 55px;
+  color: #724ae8;
+  font-size: 1.35rem;
+  cursor: pointer;
+  visibility: hidden;
+}
+.containertextarea textarea:valid ~ i {
+  visibility: visible;
+}
